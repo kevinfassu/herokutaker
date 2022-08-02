@@ -15,4 +15,4 @@ app.use(express.static("public"));
 
 
 
-app.get("/", (require, resolve) => resolve
+app.get("/", (require, resolve) => resolve)
