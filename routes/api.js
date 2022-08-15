@@ -25,7 +25,7 @@ notes.post('/notes', async (req, res) => {
         const newNote = {
             title,
             text,
-            id: uuidv4(),
+            id: uuid(),
         };
         //read file  pull in code then append with the new note
         fs.readFile('db/db.json', 'utf8', (err, data) => {
